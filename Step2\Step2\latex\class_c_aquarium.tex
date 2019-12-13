@@ -1,0 +1,105 @@
+\hypertarget{class_c_aquarium}{}\section{C\+Aquarium Class Reference}
+\label{class_c_aquarium}\index{CAquarium@{CAquarium}}
+
+
+{\ttfamily \#include $<$Aquarium.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_aquarium_ab6ba8b1abd87437ff66748e82173a5a8}{C\+Aquarium}} ()
+\item 
+void \mbox{\hyperlink{class_c_aquarium_a20b4899158d1ba4bc41217630d47e180}{On\+Draw}} (Gdiplus\+::\+Graphics $\ast$graphics)
+\item 
+void \mbox{\hyperlink{class_c_aquarium_a7c37a9229ac213d1c2bf2eb2d6486722}{Add}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_item}{C\+Item}} $>$ item)
+\item 
+void \mbox{\hyperlink{class_c_aquarium_a22fc95040d9f538917345d9e89719cc6}{Delete}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_item}{C\+Item}} $>$ item)
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_item}{C\+Item}} $>$ \mbox{\hyperlink{class_c_aquarium_a7129486467e76938fbc049723f9187f3}{Hit\+Test}} (int x, int y)
+\item 
+void \mbox{\hyperlink{class_c_aquarium_a6cc92fa921b94d304933d6ae97524365}{Move\+Items}} (double x, double y)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents an aquarium 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_aquarium_ab6ba8b1abd87437ff66748e82173a5a8}\label{class_c_aquarium_ab6ba8b1abd87437ff66748e82173a5a8}} 
+\index{CAquarium@{CAquarium}!CAquarium@{CAquarium}}
+\index{CAquarium@{CAquarium}!CAquarium@{CAquarium}}
+\subsubsection{\texorpdfstring{CAquarium()}{CAquarium()}}
+{\footnotesize\ttfamily C\+Aquarium\+::\+C\+Aquarium (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_aquarium_a7c37a9229ac213d1c2bf2eb2d6486722}\label{class_c_aquarium_a7c37a9229ac213d1c2bf2eb2d6486722}} 
+\index{CAquarium@{CAquarium}!Add@{Add}}
+\index{Add@{Add}!CAquarium@{CAquarium}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void C\+Aquarium\+::\+Add (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_item}{C\+Item}} $>$}]{item }\end{DoxyParamCaption})}
+
+Add an item to the aquarium 
+\begin{DoxyParams}{Parameters}
+{\em item} & New item to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_aquarium_a22fc95040d9f538917345d9e89719cc6}\label{class_c_aquarium_a22fc95040d9f538917345d9e89719cc6}} 
+\index{CAquarium@{CAquarium}!Delete@{Delete}}
+\index{Delete@{Delete}!CAquarium@{CAquarium}}
+\subsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void C\+Aquarium\+::\+Delete (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_item}{C\+Item}} $>$}]{item }\end{DoxyParamCaption})}
+
+Delete item from the aquarium 
+\begin{DoxyParams}{Parameters}
+{\em item} & item to delete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_aquarium_a7129486467e76938fbc049723f9187f3}\label{class_c_aquarium_a7129486467e76938fbc049723f9187f3}} 
+\index{CAquarium@{CAquarium}!HitTest@{HitTest}}
+\index{HitTest@{HitTest}!CAquarium@{CAquarium}}
+\subsubsection{\texorpdfstring{HitTest()}{HitTest()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_item}{C\+Item}} $>$ C\+Aquarium\+::\+Hit\+Test (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Test an x,y click location to see if it clicked on some item in the aquarium. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location \\
+\hline
+{\em y} & Y location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to item we clicked on or nullptr if none. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_aquarium_a6cc92fa921b94d304933d6ae97524365}\label{class_c_aquarium_a6cc92fa921b94d304933d6ae97524365}} 
+\index{CAquarium@{CAquarium}!MoveItems@{MoveItems}}
+\index{MoveItems@{MoveItems}!CAquarium@{CAquarium}}
+\subsubsection{\texorpdfstring{MoveItems()}{MoveItems()}}
+{\footnotesize\ttfamily void C\+Aquarium\+::\+Move\+Items (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+Maximum allowed X value
+
+Minimum allowed X value
+
+Maximum allowed Y value
+
+Minimum allowed Y value
+
+Minimum distance from a nudging fish \mbox{\Hypertarget{class_c_aquarium_a20b4899158d1ba4bc41217630d47e180}\label{class_c_aquarium_a20b4899158d1ba4bc41217630d47e180}} 
+\index{CAquarium@{CAquarium}!OnDraw@{OnDraw}}
+\index{OnDraw@{OnDraw}!CAquarium@{CAquarium}}
+\subsubsection{\texorpdfstring{OnDraw()}{OnDraw()}}
+{\footnotesize\ttfamily void C\+Aquarium\+::\+On\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics }\end{DoxyParamCaption})}
+
+Draw the aquarium 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The G\+D\+I+ graphics context to draw on \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_aquarium_8h}{Aquarium.\+h}}\item 
+\mbox{\hyperlink{_aquarium_8cpp}{Aquarium.\+cpp}}\end{DoxyCompactItemize}

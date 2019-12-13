@@ -1,0 +1,89 @@
+\hypertarget{class_c_fish_bubbles}{}\section{C\+Fish\+Bubbles Class Reference}
+\label{class_c_fish_bubbles}\index{CFishBubbles@{CFishBubbles}}
+
+
+{\ttfamily \#include $<$Fish\+Bubbles.\+h$>$}
+
+Inheritance diagram for C\+Fish\+Bubbles\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_fish_bubbles}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_fish_bubbles_a6ddfdd2f56bd59205792c2faebc4d724}{C\+Fish\+Bubbles}} (\mbox{\hyperlink{class_c_aquarium}{C\+Aquarium}} $\ast$aquarium)
+\item 
+\mbox{\Hypertarget{class_c_fish_bubbles_a18a1894d93bcc06b670f6c47b934c17b}\label{class_c_fish_bubbles_a18a1894d93bcc06b670f6c47b934c17b}} 
+\mbox{\hyperlink{class_c_fish_bubbles_a18a1894d93bcc06b670f6c47b934c17b}{C\+Fish\+Bubbles}} ()=delete
+\begin{DoxyCompactList}\small\item\em Default constructor (disabled) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_fish_bubbles_a07c839542cb649a05f29ffd0e245c38b}\label{class_c_fish_bubbles_a07c839542cb649a05f29ffd0e245c38b}} 
+\mbox{\hyperlink{class_c_fish_bubbles_a07c839542cb649a05f29ffd0e245c38b}{C\+Fish\+Bubbles}} (const \mbox{\hyperlink{class_c_fish_bubbles}{C\+Fish\+Bubbles}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor (disabled) \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_fish_bubbles_aab256406ae44edb059c3acdaf07ebd12}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics) override
+\item 
+bool \mbox{\hyperlink{class_c_fish_bubbles_a34b8f3c613f04b7ef9a06a6fcbce5be2}{Hit\+Test}} (int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Implements a Bubbles fish 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_fish_bubbles_a6ddfdd2f56bd59205792c2faebc4d724}\label{class_c_fish_bubbles_a6ddfdd2f56bd59205792c2faebc4d724}} 
+\index{CFishBubbles@{CFishBubbles}!CFishBubbles@{CFishBubbles}}
+\index{CFishBubbles@{CFishBubbles}!CFishBubbles@{CFishBubbles}}
+\subsubsection{\texorpdfstring{CFishBubbles()}{CFishBubbles()}}
+{\footnotesize\ttfamily C\+Fish\+Bubbles\+::\+C\+Fish\+Bubbles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_aquarium}{C\+Aquarium}} $\ast$}]{aquarium }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em aquarium} & The aquarium this is a member of \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_fish_bubbles_aab256406ae44edb059c3acdaf07ebd12}\label{class_c_fish_bubbles_aab256406ae44edb059c3acdaf07ebd12}} 
+\index{CFishBubbles@{CFishBubbles}!Draw@{Draw}}
+\index{Draw@{Draw}!CFishBubbles@{CFishBubbles}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Fish\+Bubbles\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Draw our fish 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The graphics context to draw on \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_c_item_a7ef8448d0c4bc53d0f1943a4dc817f6f}{C\+Item}}.
+
+\mbox{\Hypertarget{class_c_fish_bubbles_a34b8f3c613f04b7ef9a06a6fcbce5be2}\label{class_c_fish_bubbles_a34b8f3c613f04b7ef9a06a6fcbce5be2}} 
+\index{CFishBubbles@{CFishBubbles}!HitTest@{HitTest}}
+\index{HitTest@{HitTest}!CFishBubbles@{CFishBubbles}}
+\subsubsection{\texorpdfstring{HitTest()}{HitTest()}}
+{\footnotesize\ttfamily bool C\+Fish\+Bubbles\+::\+Hit\+Test (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Test to see if we hit this object with a mouse. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X position to test \\
+\hline
+{\em y} & Y position to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if hit. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_item_a8bd4f5e3f2eb2487125dd435719484e8}{C\+Item}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_fish_bubbles_8h}{Fish\+Bubbles.\+h}}\item 
+\mbox{\hyperlink{_fish_bubbles_8cpp}{Fish\+Bubbles.\+cpp}}\end{DoxyCompactItemize}
